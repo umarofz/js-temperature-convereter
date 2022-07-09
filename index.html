@@ -7,27 +7,26 @@
   <link rel="stylesheet" href="./css/bootstrap.css">
   <title>Document</title>
 </head>
-<body>
-  <header class="header">
-    <div class="container">
-      <div class="header__container"></div>
-    </div>
-  </header>
+<body class="bg-secondary h-100 body">
 
-  <main class="main">
-    <section class="hero">
-      <div class="container">
-        <div class="hero__container"></div>
-      </div>
-    </section>
-  </main>
+  <form class="form container text-center mx-auto w-75" action="https://echo.htmlacademy.ru/">
+    <h2 class="p-5 fs-1 fw-bold text-white">Temperature converter</h2>
 
-  <footer class="footer">
-    <div class="container">
-      <div class="footer__container"></div>
+    <div class="form-group d-flex mb-4">
+      <label class="alert alert-primary h4 w-50 me-3" for="">Temperature in celsius</label>
+      <input class="input__temp w-50 form-control" style="height: 63px;" type="text" placeholder="°C" required>
     </div>
-  </footer>
+
+    <div class="form-group d-flex">
+      <label class="alert alert-primary h4 w-50 me-3" for="">Temperature in fahrenheit</label>
+      <input class="input__temp input__farenheit w-50 form-control" style="height: 63px;" type="text" placeholder="32 °F" disabled>
+    </div>
+
+    <button class="btn btn-primary form-control p-3" type="submit" style="font-size: 30px;">⟲ Convert</button>
+  </form>
+
 
   <script src="./js/bootstrap.js"></script>
+  <script src="./js/main.js"></script>
 </body>
 </html>
